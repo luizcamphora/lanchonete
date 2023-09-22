@@ -1,0 +1,185 @@
+/* Estilos para a barra de navegação */
+.logo {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/* Estilos para títulos e texto */
+.logoTitulo, .tituloCard, #descricaoIcone {
+    font-family: 'Bungee Inline', cursive;
+    margin: 0;
+    text-align: center;
+}
+
+.principal {
+    /* Estilos para a seção principal */
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#linkNav {
+    /* Estilos para links de navegação */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    width: 68px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#icone {
+    /* Estilos para ícones */
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.imagemCard {
+    /* Estilos para imagens */
+    width: 100%;
+    height: 300px;
+}
+
+/* Estilos para a barra de combo */
+.logoCombo {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+#navegacaoCombo {
+    /* Estilos para a navegação do combo */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    background-color: #f8f9fa;
+}
+
+/* Estilos para os cards */
+#cardId {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cardsPosicao {
+    width: 300px;
+    height: 600px;
+    margin: 10px;
+}
+
+.principalCombo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2600px;
+}
+
+.sobreCard {
+    /* Estilos para informações do card */
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+#preco {
+    font-size: x-large;
+    font-family: 'Alfa Slab One', cursive;
+    margin: 0 auto;
+}
+
+#comprar {
+    /* Estilos para o botão de compra */
+    font-size: 16px;
+    width: 160px;
+    height: 40px;
+    background-color: #ffffff;
+    border-color: gray;
+    border-radius: 5px;
+    color: gray;
+    transition: background-color 0.3s;
+}
+
+#comprar:hover {
+    background-color: gray;
+    color: #ffffff; 
+}
+
+#divPrecoBtn {
+    /* Estilos para o contêiner de preço e botão */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#descricaoIcone {
+    /* Estilos para a descrição do ícone */
+    font-family: 'Bungee Inline', cursive;
+    font-size: 12px;
+}
+
+#cardRefri {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagemCardRefri {
+    width: 180px;
+    height: 280px;
+    align-items: center;
+}
+
+.imgTtl {
+    display: flex;
+    align-items: center;
+}
+
+.decricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principalRefri {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+
+#imagemCarousel {
+    width: 730px;
+    height: 400px;
+}
+
+.imagemCardCombo {
+    width: 100%;
+    height: 300px;
+}
+
+.principalCombo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1200px;
+}
