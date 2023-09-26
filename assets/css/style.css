@@ -21,15 +21,6 @@
     text-align: center;
 }
 
-.principal {
-    /* Estilos para a seção principal */
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-
 #linkNav {
     /* Estilos para links de navegação */
     display: flex;
@@ -184,4 +175,17 @@
     flex-direction: column;
     justify-content: space-between;
     height: 1200px;
+}
+
+#icone{
+    font-size: 26px;
+}
+#principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#carouselExample{
+    margin-top: 80px;
 }

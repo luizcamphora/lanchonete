@@ -19,7 +19,7 @@
 
 <body>
 
-    <main class="principal">
+    <main id="principal">
         <!-- logotipo -->
         <nav class="logo">
             <div class="logotipo">
@@ -29,32 +29,30 @@
             <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping" id="icone"></i></a>
         </nav>
 
-        <!-- inicio carousel -->
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/assets/img/combo.png" class="d-block w-100" alt="..." id="imagemCarousel">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/comboNovo.jpg" class="d-block w-100" alt="..." id="imagemCarousel">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/modelocombo.png" class="d-block w-100" alt="..." id="imagemCarousel">
-                </div>
+              <div class="carousel-item active">
+                <img src="/assets/img/modelocombo.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/img/comboNovo.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/img/combo.png" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
             </button>
-        </div>
+          </div>
+
         <!-- menu de navegação -->
-        <footer class="navbar navbar-expand-lg bg-body-tertiary" id="navegacao">
+        <footer class="navbar navbar-expand-lg bg-body-tertiary" id="navegacaoCombo">
             <div class="container-fluid" id="linkNav">
                 <a class="navbar-brand" href="/index.html">
                     <p id="descricaoIcone">Home</p><img src="/assets/icon/home.svg" alt="" id="icones">
