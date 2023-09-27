@@ -246,3 +246,45 @@
 #itensSelecion{
     margin: 10px;
 }
+
+/* Estilos para telas grandes (desktop) */
+@media screen and (min-width: 768px) {
+    /* Estilos específicos para tablets */
+
+    /* Centralizar logotipo e ícone de carrinho */
+    .logo {
+        justify-content: center;
+    }
+
+    /* Ajustar tamanho da fonte para melhor legibilidade em tablets */
+    .logoTitulo {
+        font-size: 24px;
+    }
+
+    /* Ajustar espaçamento entre os cards */
+    .cards .primeiroCard {
+        margin: 10px;
+    }
+
+    /* Redimensionar imagens dos cards */
+    .imagemCard {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajustar tamanho da fonte e margens para botões e preços */
+    .preco, .botao-enviar-ao-carrinho {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    /* Estilos para o menu de navegação */
+    .navbar-brand {
+        width: auto; /* Ajustar tamanho dos ícones de navegação */
+        font-size: 16px; /* Tamanho da fonte dos ícones de navegação */
+    }
+
+    /* Espaço reservado para outros estilos específicos para tablets */
+    /* Adicione seus estilos específicos para tablets aqui */
+}
+
