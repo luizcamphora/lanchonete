@@ -79,7 +79,7 @@
 
 #cardsPosicao {
     width: 300px;
-    height: 600px;
+    height: 500px;
     margin: 10px;
 }
 
@@ -87,7 +87,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 2600px;
 }
 
 .sobreCard {
@@ -135,6 +134,7 @@
 #cardRefri {
     display: flex;
     flex-direction: column;
+    height: 250px;
 }
 
 .imagemCardRefri {
@@ -188,4 +188,61 @@
 }
 #carouselExample{
     margin-top: 80px;
+}
+#principalComboId{
+    height: 1680px;
+}
+#principalLancheId{
+    height: 2200px;
+}
+#principalRefriId{
+    height: 900px;
+}
+.modal-title{
+    color: gray;
+}
+#quantidade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#maisoumenos{
+    display: flex;
+    margin: 10px;
+}
+#tituloQtde{
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#number{
+    width: 80px;
+    text-align: center;
+}
+#decrement,#increment{
+    background-color: black;
+    border: black;
+}
+#checkboxId{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 20px;
+    
+}
+
+#checkboxIdseletion{
+    margin: 10px;
+}
+#selectionRefri{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 20px;
+}
+#itensSelecion{
+    margin: 10px;
 }

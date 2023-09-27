@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Arquivo CSS personalizado -->
+    <!-- Arquivos CSS personalizados -->
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
-    <!-- links externos -->
+    <!-- Links externos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +21,8 @@
 
 <body>
 
-    <main class="principalCombo">
-        <!-- Nav logo -->
+    <main class="principalCombo" id="principalComboId">
+        <!-- Barra de navegação -->
         <nav class="logoCombo">
             <div class="logotipo">
                 <h3 class="logoTitulo">Luizão Lanches</h3>
@@ -31,10 +31,11 @@
             <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping" id="icone"></i></a>
         </nav>
 
-        <!-- cards -->
+        <!-- Cards -->
 
         <div class="cards" id="cardId">
 
+            <!-- Primeiro Card -->
             <div class="primeiroCard" id="cardsPosicao">
                 <img src="/assets/img/combo.png" alt="" class="imagemCardCombo">
                 <h3 class="tituloCard">Combo 1</h3>
@@ -46,6 +47,8 @@
                     <button type="submit" class="btn btn-primary botao-enviar-ao-carrinho">Enviar ao carrinho</button>
                 </div>
             </div>
+
+            <!-- Segundo Card -->
             <div class="primeiroCard" id="cardsPosicao">
                 <img src="/assets/img/comboNovo.jpg" alt="" class="imagemCardCombo">
                 <h3 class="tituloCard">Combo 2</h3>
@@ -57,6 +60,8 @@
                     <button type="submit" class="btn btn-primary botao-enviar-ao-carrinho">Enviar ao carrinho</button>
                 </div>
             </div>
+
+            <!-- Terceiro Card -->
             <div class="primeiroCard" id="cardsPosicao">
                 <img src="/assets/img/modelocombo.png" alt="" class="imagemCardCombo">
                 <h3 class="tituloCard">Combo 3</h3>
@@ -67,63 +72,87 @@
                     <t class="preco" id="preco">R$ 30,00</t>
                     <button type="submit" class="btn btn-primary botao-enviar-ao-carrinho">Enviar ao carrinho</button>
                 </div>
-
             </div>
         </div>
-        <!-- janela modal -->
+        <!-- Modal -->
 
         <div class="modal" tabindex="-1" id="janelaModal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Selecionar itens</h5>
+                        <h5 class="modal-title">Combo</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                   
-                    <div class="input-group">
-                        <label class="form-check-label" for="flexSwitchCheckDefault">Quantidade de combos:</label>
-                        <span class="input-group-btn">
-                            <button type="button" class="btn btn-primary" id="decrement">-</button>
-                        </span>
-                        <input type="number" class="form-control" id="number" value="1">
-                        <span class="input-group-btn">
-                            <button type="button" class="btn btn-primary" id="increment">+</button>
-                        </span>
+
+                    <!-- Input para quantidade -->
+                    <div class="input-group" id="quantidade">
+                        <div id="tituloQtde">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Quantidade:</label>
+                        </div>
+                        <div id="maisoumenos">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-primary" id="decrement">-</button>
+                            </span>
+                            <input type="number" class="form-control" id="number" value="1">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-primary" id="increment">+</button>
+                            </span>
+                        </div>
                     </div>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                        <label class="form-check-label" for="flexSwitchCheckDefault">Ketchup</label>
+
+                    <!-- Opções de acompanhamentos -->
+                    <div id="checkboxId">
+                        <div id="tituloQtde">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Acompanhamentos:</label>
+                        </div>
+                        <div class="form-check form-switch" id="checkboxIdseletion">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Ketchup</label>
+                        </div>
+
+                        <div class="form-check form-switch" id="checkboxIdseletion">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Mostarda</label>
+                        </div>
+                        <div class="form-check form-switch" id="checkboxIdseletion">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Maionese</label>
+                        </div>
+                        <div class="form-check form-switch" id="checkboxIdseletion">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Maionese com alho</label>
+                        </div>
                     </div>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                        <label class="form-check-label" for="flexSwitchCheckDefault">Mostarda</label>
+
+                    <!-- Opções de refrigerantes -->
+                    <div id="selectionRefri">
+                        <div id="tituloQtde">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Selecione os
+                                refrigerantes:</label>
+                        </div>
+                        <div class="form-check" id="itensSelecion">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Coca-cola 350ml
+                            </label>
+                        </div>
+                        <div class="form-check" id="itensSelecion">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Guaraná Antártica 350ml
+                            </label>
+                        </div>
+                        <div class="form-check" id="itensSelecion">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Fanta Laranja 350ml
+                            </label>
+                        </div>
                     </div>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                        <label class="form-check-label" for="flexSwitchCheckDefault">Maionese</label>
-                    </div>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                        <label class="form-check-label" for="flexSwitchCheckDefault">Maionese com alho</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">
-                          Coca-cola
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
-                          Guaraná Antártica
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">
-                          Fanta Laranja
-                        </label>
-                      </div>
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                         <button type="submit" class="btn btn-primary">Enviar</button>
@@ -132,7 +161,7 @@
             </div>
         </div>
 
-        <!-- menu de navegação -->
+        <!-- Menu de navegação -->
 
         <footer class="navbar navbar-expand-lg bg-body-tertiary" id="navegacaoCombo">
             <div class="container-fluid" id="linkNav">
@@ -152,7 +181,7 @@
         </footer>
     </main>
 
-    <!-- links bootstrap -->
+    <!-- Links do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -160,7 +189,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
-    <!-- link font awesome -->
+    <!-- Link do Font Awesome -->
     <script src="https://kit.fontawesome.com/95932c07d1.js" crossorigin="anonymous"></script>
 
     <!-- Arquivo JavaScript personalizado -->
