@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Arquivos CSS personalizados -->
+    <!-- Importação de arquivos CSS personalizados -->
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
-    <!-- Links externos -->
+    <!-- Links externos, como Bootstrap e fontes Google -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,8 @@
 </head>
 
 <body>
-
-    <main class="principalCombo" id="principalComboId">
+    <!-- Conteúdo principal -->
+    <main class="principalCombo" id="principalLancheId">
         <!-- Barra de navegação -->
         <nav class="logoCombo">
             <div class="logotipo">
@@ -31,14 +31,25 @@
             <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping" id="icone"></i></a>
         </nav>
 
-        <!-- Cards -->
-
+        <!-- Cards de lanches -->
         <div class="cards" id="cardId">
-
             <!-- Primeiro Card -->
             <div class="primeiroCard" id="cardsPosicao">
-                <img src="/assets/img/combo.png" alt="" class="imagemCardCombo">
-                <h3 class="tituloCard">Combo 1</h3>
+                <img src="/assets/img/x-salada.jpg" alt="" class="imagemCard">
+                <h3 class="tituloCard">X-Salada</h3>
+                <t class="sobreCard">
+                    Um delicioso e suculento hambúrguer com queijo derretido, alface fresca, tomate maduro e
+                    molho especial, tudo envolto em um pão macio e saboroso.</t>
+                <div id="divPrecoBtn">
+                    <t class="preco" id="preco">R$ 19,00</t>
+                    <button type="submit" class="btn btn-primary botao-enviar-ao-carrinho">Enviar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Segundo Card -->
+            <div class="primeiroCard" id="cardsPosicao">
+                <img src="/assets/img/x-burger.jpg" alt="" class="imagemCard">
+                <h3 class="tituloCard">X-Burger</h3>
                 <t class="sobreCard">
                     Um delicioso e suculento hambúrguer com queijo derretido, alface fresca, tomate maduro e
                     molho especial, tudo envolto em um pão macio e saboroso.</t>
@@ -48,10 +59,10 @@
                 </div>
             </div>
 
-            <!-- Segundo Card -->
+            <!-- Terceiro Card -->
             <div class="primeiroCard" id="cardsPosicao">
-                <img src="/assets/img/comboNovo.jpg" alt="" class="imagemCardCombo">
-                <h3 class="tituloCard">Combo 2</h3>
+                <img src="/assets/img/x-bacon.jpg" alt="" class="imagemCard">
+                <h3 class="tituloCard">X-Bacon</h3>
                 <t class="sobreCard">
                     Um delicioso e suculento hambúrguer com queijo derretido, alface fresca, tomate maduro e
                     molho especial, tudo envolto em um pão macio e saboroso.</t>
@@ -61,10 +72,10 @@
                 </div>
             </div>
 
-            <!-- Terceiro Card -->
+            <!-- Quarto Card -->
             <div class="primeiroCard" id="cardsPosicao">
-                <img src="/assets/img/modelocombo.png" alt="" class="imagemCardCombo">
-                <h3 class="tituloCard">Combo 3</h3>
+                <img src="/assets/img/x-frango.jpg" alt="" class="imagemCard">
+                <h3 class="tituloCard">X-Frango</h3>
                 <t class="sobreCard">
                     Um delicioso e suculento hambúrguer com queijo derretido, alface fresca, tomate maduro e
                     molho especial, tudo envolto em um pão macio e saboroso.</t>
@@ -74,17 +85,18 @@
                 </div>
             </div>
         </div>
-        <!-- Modal -->
+        <!-- Fim dos Cards de lanches -->
 
+        <!-- Modal -->
         <div class="modal" tabindex="-1" id="janelaModal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Combo</h5>
+                        <h5 class="modal-title">Lanches</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
-                    <!-- Input para quantidade -->
+                    <!-- Quantidade de lanches -->
                     <div class="input-group" id="quantidade">
                         <div id="tituloQtde">
                             <label class="form-check-label" for="flexSwitchCheckDefault">Quantidade:</label>
@@ -100,7 +112,7 @@
                         </div>
                     </div>
 
-                    <!-- Opções de acompanhamentos -->
+                    <!-- Acompanhamentos -->
                     <div id="checkboxId">
                         <div id="tituloQtde">
                             <label class="form-check-label" for="flexSwitchCheckDefault">Acompanhamentos:</label>
@@ -153,6 +165,7 @@
                         </div>
                     </div>
 
+                    <!-- Rodapé do Modal -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                         <button type="submit" class="btn btn-primary">Enviar</button>
@@ -160,21 +173,21 @@
                 </div>
             </div>
         </div>
+        <!-- Fim do Modal -->
 
         <!-- Menu de navegação -->
-
         <footer class="navbar navbar-expand-lg bg-body-tertiary" id="navegacaoCombo">
             <div class="container-fluid" id="linkNav">
-                <a class="navbar-brand" href="/index.html">
+                <a class="navbar-brand" href="/home.html">
                     <p id="descricaoIcone">Home</p><img src="/assets/icon/home.svg" alt="" id="icones">
                 </a>
-                <a class="navbar-brand" href="/assets/html/combo.html">
+                <a class="navbar-brand" href="/combos.html">
                     <p id="descricaoIcone">Combo</p><img src="/assets/icon/combo.svg" alt="" id="icones">
                 </a>
-                <a class="navbar-brand" href="/assets/html/lanches.html">
+                <a class="navbar-brand" href="/lanches.html">
                     <p id="descricaoIcone">Lanches</p><img src="/assets/icon/lanches.svg" alt="" id="icones">
                 </a>
-                <a class="navbar-brand" href="/assets/html/bebidas.html">
+                <a class="navbar-brand" href="/bebidas.html">
                     <p id="descricaoIcone">Bebidas</p><img src="/assets/icon/refri.svg" alt="" id="icones">
                 </a>
             </div>
@@ -189,12 +202,11 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
-    <!-- Link do Font Awesome -->
+    <!-- Links para o FontAwesome -->
     <script src="https://kit.fontawesome.com/95932c07d1.js" crossorigin="anonymous"></script>
 
     <!-- Arquivo JavaScript personalizado -->
     <script src="/assets/js/script.js"></script>
-
 </body>
 
 </html>
