@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luizão Lanches</title>
+
+    <!-- Arquivo CSS personalizado -->
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Links externos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee+Inline&family=Caveat&family=Lobster&display=swap"
+        rel="stylesheet">
+</head>
+
+<!-- Navegacao -->
+
+<nav id="navegacao">
+    <!-- Logo + icone carrinho -->
+    <div id="logo">
+        <div id="logotipo">
+            <h3 id="logo__titulo">Luizão Lanches</h3>
+            <img src="/assets/icon/logoburger.svg" alt="Ícone de um hamburguer" id="icone__logo">
+        </div>
+        <div id="carrinho">
+            <button type="submit" id="carrinho__btn">Visualizar itens do carrinho</button>
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;" id="icone__carrinho"></i>
+        </div>
+    </div>
+
+    <!-- Lista Menu + icone login -->
+    <div id="menu">
+        <div id="menu__lista">
+            <a href="#" id="menu__lista--link">Home</a>
+            <a href="#" id="menu__lista--link">Cardápio</a>
+            <a href="#" id="menu__lista--link">Reservas</a>
+            <a href="#" id="menu__lista--link">Sobre nós</a>
+        </div>
+        <div id="menu__login">
+            <a href="#" id="menu__login--link">Login</a>
+            <i class="fa-solid fa-right-to-bracket" id="icone__login"></i>
+        </div>
+
+    </div>
+
+    <div id="contato">
+        <div id="contato__telefone">
+            <i class="fa-solid fa-phone" id="icone__telefone"></i>
+            <a href="#" id="contato__telefone--link">(12) 3232-3232</a>
+        </div>
+        <div id="contato__localizacao">
+            <i class="fa-solid fa-location-dot" id="icone__localizacao"></i>
+            <a href="#" id="contato__localizacao--link">Avenida José Vicente de Barros, 444 Taubaté-SP</a>
+        </div>
+        <div id="redes">
+            <i class="fa-brands fa-facebook" id="icone__redes"></i>
+            <i class="fa-brands fa-instagram" id="icone__redes"></i>
+            <i class="fa-brands fa-whatsapp" id="icone__redes"></i>
+            <i class="fa-brands fa-google" id="icone__redes"></i>
+        </div>
+
+
+    </div>
+</nav>
+
+<!-- Principal -->
+<main id="principal">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div id="overlay-text">
+                   <p id="texto__imagem">Ingredientes de Qualidade</p>
+                   <button id="botao_imagem">Verifique Nosso Cardápio</button>
+                </div>
+                <img src="/assets/img/carousel_first.jpg" class="d-block w-100" alt="..." id="imagem__carousel">
+
+            </div>
+            <div class="carousel-item">
+                <div id="overlay-text">
+                    <p id="texto__imagem">Ingredientes de Qualidade</p>
+                    <button id="botao_imagem">Verifique Nosso Cardápio</button>
+                 </div>
+                <img src="/assets/img/carousel_second.jpg" class="d-block w-100" alt="..." id="imagem__carousel">
+            </div>
+            <div class="carousel-item">
+                <div id="overlay-text">
+                    <p id="texto__imagem">Ingredientes de Qualidade</p>
+                    <button id="botao_imagem">Verifique Nosso Cardápio</button>
+                 </div>
+                <img src="/assets/img/carousel_third.jpg" class="d-block w-100" alt="..." id="imagem__carousel">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</main>
+<!-- Rodapé -->
+<footer id="rodape"></footer>
+
+<body>
+    <!-- links bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- link font awesome -->
+    <script src="https://kit.fontawesome.com/95932c07d1.js" crossorigin="anonymous"></script>
+
+    <!-- Arquivo JavaScript personalizado -->
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

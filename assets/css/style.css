@@ -1,290 +1,151 @@
-/* Estilos para a barra de navegação */
-.logo {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  background-color: #2D394B;
 }
 
-.logotipo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
+#logotipo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+#logotipo:hover {
+  cursor: pointer;
 }
 
-/* Estilos para títulos e texto */
-.logoTitulo, .tituloCard, #descricaoIcone {
-    font-family: 'Bungee Inline', cursive;
-    margin: 0;
-    text-align: center;
+#logo__titulo {
+  font-family: "Bungee Inline", cursive;
+  font-size: 32px;
+  margin: 0;
+  color: whitesmoke;
 }
 
-#linkNav {
-    /* Estilos para links de navegação */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#icone__logo {
+  margin-left: 8px;
+  width: 40px;
+  height: 40px;
 }
 
-.navbar-brand {
-    width: 68px;
-    text-align: center;
-    font-size: 12px;
+#carrinho {
+  margin-right: 40px;
+}
+#carrinho #icone__carrinho {
+  width: 24px;
+  height: 24px;
+  color: whitesmoke;
+  margin-left: 16px;
+}
+#carrinho #icone__carrinho:hover {
+  cursor: pointer;
+  transform: 1s;
+}
+#carrinho #carrinho__btn {
+  background-color: #29A22E;
+  color: whitesmoke;
+  width: 250px;
+  height: 40px;
+  border-color: #29A22E;
+  font-size: 16px;
+  border-radius: 5px;
+  border-style: none;
+}
+#carrinho #carrinho__btn:hover {
+  background-color: #17d41d;
+  transition: 1s;
 }
 
-#icones {
-    /* Estilos para ícones */
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    color: black;
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  background-color: #F5F5F5;
 }
 
-.imagemCard {
-    /* Estilos para imagens */
-    width: 100%;
-    height: 300px;
+#menu__lista {
+  margin-left: 40px;
+}
+#menu__lista #menu__lista--link {
+  font-family: "Bungee Inline", cursive;
+  font-size: 16px;
+  color: #2D394B;
+  text-decoration: none;
+  margin-right: 16px;
+}
+#menu__lista #menu__lista--link:hover {
+  color: purple;
 }
 
-/* Estilos para a barra de combo */
-.logoCombo {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
+#menu__login {
+  margin-right: 40px;
+}
+#menu__login #icone__login {
+  margin-left: 8px;
+  color: #2D394B;
+}
+#menu__login #icone__login:hover {
+  color: purple;
+  cursor: pointer;
+}
+#menu__login #menu__login--link {
+  font-family: "Bungee Inline", cursive;
+  font-size: 16px;
+  color: #2D394B;
+  text-decoration: none;
+}
+#menu__login #menu__login--link:hover {
+  color: purple;
 }
 
-#navegacaoCombo {
-    /* Estilos para a navegação do combo */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-bottom: 0;
-    background-color: #f8f9fa;
+#contato {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
-
-/* Estilos para os cards */
-#cardId {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+#contato #redes {
+  margin-right: 40px;
 }
-
-#cardsPosicao {
-    width: 300px;
-    height: 500px;
-    margin: 10px;
+#contato #redes #icone__redes {
+  margin-left: 16px;
 }
-
-.principalCombo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#contato #redes #icone__redes:hover {
+  color: purple;
+  cursor: pointer;
 }
-
-.sobreCard {
-    /* Estilos para informações do card */
-    font-family: 'Caveat', cursive;
-    font-size: 20px;
+#contato #contato__localizacao {
+  margin-left: 16px;
+  color: #2D394B;
 }
-
-#preco {
-    font-size: x-large;
-    font-family: 'Alfa Slab One', cursive;
-    margin: 0 auto;
+#contato #contato__localizacao:hover {
+  color: purple;
+  cursor: pointer;
 }
-
-#comprar {
-    /* Estilos para o botão de compra */
-    font-size: 16px;
-    width: 160px;
-    height: 40px;
-    background-color: #ffffff;
-    border-color: gray;
-    border-radius: 5px;
-    color: gray;
-    transition: background-color 0.3s;
+#contato #contato__localizacao #contato__localizacao--link {
+  color: #2D394B;
+  text-decoration: none;
 }
-
-#comprar:hover {
-    background-color: gray;
-    color: #ffffff; 
+#contato #contato__localizacao #contato__localizacao--link:hover {
+  color: purple;
 }
-
-#divPrecoBtn {
-    /* Estilos para o contêiner de preço e botão */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#contato #contato__telefone {
+  margin-left: 16px;
+  color: #2D394B;
 }
-
-#descricaoIcone {
-    /* Estilos para a descrição do ícone */
-    font-family: 'Bungee Inline', cursive;
-    font-size: 12px;
+#contato #contato__telefone:hover {
+  color: purple;
+  cursor: pointer;
 }
-
-#cardRefri {
-    display: flex;
-    flex-direction: column;
-    height: 250px;
+#contato #contato__telefone #contato__telefone--link {
+  color: #2D394B;
+  text-decoration: none;
 }
-
-.imagemCardRefri {
-    width: 180px;
-    height: 280px;
-    align-items: center;
-}
-
-.imgTtl {
-    display: flex;
-    align-items: center;
-}
-
-.decricao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.principalRefri {
-    display: flex;
-    flex-direction: column;
-    height: 1000px;
-}
-
-#imagemCarousel {
-    width: 730px;
-    height: 400px;
-}
-
-.imagemCardCombo {
-    width: 100%;
-    height: 300px;
-}
-
-.principalCombo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 1200px;
-}
-
-#icone{
-    font-size: 26px;
-}
-#principal{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-#carouselExample{
-    margin-top: 80px;
-}
-#principalComboId{
-    height: 1680px;
-}
-#principalLancheId{
-    height: 2200px;
-}
-#principalRefriId{
-    height: 900px;
-}
-.modal-title{
-    color: gray;
-}
-#quantidade{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#maisoumenos{
-    display: flex;
-    margin: 10px;
-}
-#tituloQtde{
-    margin: 10px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-#number{
-    width: 80px;
-    text-align: center;
-}
-#decrement,#increment{
-    background-color: black;
-    border: black;
-}
-#checkboxId{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    font-size: 20px;
-    
-}
-
-#checkboxIdseletion{
-    margin: 10px;
-}
-#selectionRefri{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    font-size: 20px;
-}
-#itensSelecion{
-    margin: 10px;
-}
-
-/* Estilos para telas grandes (desktop) */
-@media screen and (min-width: 768px) {
-    /* Estilos específicos para tablets */
-
-    /* Centralizar logotipo e ícone de carrinho */
-    .logo {
-        justify-content: center;
-    }
-
-    /* Ajustar tamanho da fonte para melhor legibilidade em tablets */
-    .logoTitulo {
-        font-size: 24px;
-    }
-
-    /* Ajustar espaçamento entre os cards */
-    .cards .primeiroCard {
-        margin: 10px;
-    }
-
-    /* Redimensionar imagens dos cards */
-    .imagemCard {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Ajustar tamanho da fonte e margens para botões e preços */
-    .preco, .botao-enviar-ao-carrinho {
-        font-size: 18px;
-        margin: 10px;
-    }
-
-    /* Estilos para o menu de navegação */
-    .navbar-brand {
-        width: auto; /* Ajustar tamanho dos ícones de navegação */
-        font-size: 16px; /* Tamanho da fonte dos ícones de navegação */
-    }
-
-    /* Espaço reservado para outros estilos específicos para tablets */
-    /* Adicione seus estilos específicos para tablets aqui */
-}
-
+#contato #contato__telefone #contato__telefone--link:hover {
+  color: purple;
+}/*# sourceMappingURL=style.css.map */

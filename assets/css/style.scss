@@ -1,0 +1,175 @@
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  background-color: #2D394B; // Cor de fundo do logotipo
+}
+
+#logotipo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+
+  &:hover {
+    cursor: pointer; // Altera o cursor para uma mãozinha quando hover
+  }
+}
+
+#logo__titulo {
+  font-family: "Bungee Inline", cursive;
+  font-size: 32px;
+  margin: 0;
+  color: whitesmoke; // Cor do texto do título do logotipo
+}
+
+#icone__logo {
+  margin-left: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+#carrinho {
+  margin-right: 40px;
+
+  #icone__carrinho {
+    width: 24px;
+    height: 24px;
+    color: whitesmoke;
+    margin-left: 16px;
+
+    &:hover {
+      cursor: pointer; // Altera o cursor para uma mãozinha quando hover
+      transform: 1s; // Efeito de transição suave
+    }
+  }
+
+  #carrinho__btn {
+    background-color: #29A22E;
+    color: whitesmoke;
+    width: 250px;
+    height: 40px;
+    border-color: #29A22E;
+    font-size: 16px;
+    border-radius: 5px;
+    border-style: none;
+
+    &:hover {
+      background-color: #17d41d;
+      transition: 1s; // Efeito de transição suave
+    }
+  }
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  background-color: #F5F5F5; // Cor de fundo do menu
+}
+
+#menu__lista {
+  margin-left: 40px;
+
+  #menu__lista--link {
+    font-family: "Bungee Inline", cursive;
+    font-size: 16px;
+    color: #2D394B;
+    text-decoration: none;
+    margin-right: 16px;
+
+    &:hover {
+      color: purple; // Cor do link quando hover
+    }
+  }
+}
+
+#menu__login {
+  margin-right: 40px;
+
+  #icone__login {
+    margin-left: 8px;
+    color: #2D394B;
+
+    &:hover {
+      color: purple; // Cor do ícone de login quando hover
+      cursor: pointer; // Altera o cursor para uma mãozinha quando hover
+    }
+  }
+
+  #menu__login--link {
+    font-family: "Bungee Inline", cursive;
+    font-size: 16px;
+    color: #2D394B;
+    text-decoration: none;
+
+    &:hover {
+      color: purple; // Cor do link de login quando hover
+    }
+  }
+}
+
+#contato {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
+  #redes {
+    margin-right: 40px;
+
+    #icone__redes {
+      margin-left: 16px;
+
+      &:hover {
+        color: purple; // Cor do ícone das redes sociais quando hover
+        cursor: pointer; // Altera o cursor para uma mãozinha quando hover
+      }
+    }
+  }
+
+  #contato__localizacao {
+    margin-left: 16px;
+    color: #2D394B;
+
+    &:hover {
+      color: purple; // Cor do texto de localização quando hover
+      cursor: pointer; // Altera o cursor para uma mãozinha quando hover
+    }
+
+    #contato__localizacao--link {
+      color: #2D394B;
+      text-decoration: none;
+
+      &:hover {
+        color: purple; // Cor do link de localização quando hover
+      }
+    }
+  }
+
+  #contato__telefone {
+    margin-left: 16px;
+    color: #2D394B;
+
+    &:hover {
+      color: purple; // Cor do texto de telefone quando hover
+      cursor: pointer; // Altera o cursor para uma mãozinha quando hover
+    }
+
+    #contato__telefone--link {
+      color: #2D394B;
+      text-decoration: none;
+
+      &:hover {
+        color: purple; // Cor do link de telefone quando hover
+      }
+    }
+  }
+}
+
+// Restante do código...
